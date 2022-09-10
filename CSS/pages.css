@@ -160,3 +160,18 @@ body {
 }
 
 /* training page ends here */
+
+/* our projects */
+.projects h4{
+    color: var(--pri-color);
+}
+/* our projects page ends */
+
+/* contact us */
+.contact-us h4{
+    color: var(--pri-color);
+}
+.contact-us p{
+    color: var(--sec-color);
+}
+/* contact us page ends */
