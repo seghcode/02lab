@@ -1,0 +1,162 @@
+:root {
+    --pri-color: #06217A;
+    --sec-color: #ED8D00;
+    --white: #FFFFFF;
+    --bg-color-nav: #D2ECEA;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* media query */
+@media only screen and (max-width:425px) {
+    .our-training{
+        flex-direction: column;
+    }
+    /* .right-side-content {
+        display: grid !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+    } */
+    .training-programs-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr) !important;
+        gap: 4px;
+    }
+    .training-programs .bttn {
+        margin: 5px 40px !important;
+    }
+}
+@media only screen and (max-width:768px) {
+    .training-programs .bttn {
+        margin: 5px 40px !important;
+    }
+}
+/* this is trainig page styling */
+.left-side-content,
+.right-side-content {
+    flex: 1;
+}
+
+.left-side-content {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.left-side-content h4 {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--pri-color);
+}
+
+.left-side-content h2 {
+    font-size: 35px;
+    font-weight: 700;
+    color: var(--sec-color);
+}
+
+/* .right-side-content { */
+    /* padding: 15px; */
+    /* display: grid; */
+    /* grid-template-columns: repeat(2, 1fr); */
+    /* grid-gap: .5rem !important   ; */
+/* } */
+
+.rs-t-content img {
+    margin: auto;
+}
+
+.rs-t-content h4 {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--pri-color);
+    text-align: center;
+}
+
+.rs-t-content p {
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--sec-color);
+    text-align: center;
+}
+
+.rs-t-content:hover {
+    box-shadow: rgba(0, 0, 0, 0.9);
+    background: var(--bg-color-nav);
+    transition-property: box-shadow, opacity;
+} 
+
+/* our training programs */
+.our-training-programs {
+    background: #F7F7F7;
+    padding: 25px 0;
+}
+
+.our-training-programs h4 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--pri-color);
+}
+
+.our-training-programs p {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    color: var(--sec-color);
+}
+
+.training-programs-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+.training-programs {
+    /* margin: 0px!important; */
+    padding: 10px;
+}
+
+.card {
+    border-radius: 15px !important;
+}
+
+.training-programs span {
+    display: block;
+    text-align: center;
+    background: #F7F7F7;
+    margin: 5px 20px;
+    border-radius: 5px;
+    color: #ccc;
+}
+
+.training-programs span:hover {
+    background: #d6d6d6;
+    color: var(--white);
+
+}
+
+.training-programs .bttn {
+    /* display: flex; */
+    /* justify-content: center; */
+    padding: 5px;
+    text-align: center;
+    background: var(--pri-color);
+    color: var(--sec-color);
+    margin: 10px 100px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.training-programs .bttn:hover {
+    text-decoration: underline;
+}
+
+/* training page ends here */
