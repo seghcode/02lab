@@ -35,6 +35,10 @@ body {
     .d-sm-bl {
         display: none;
     }
+    .cc-sm{
+        display: flex;
+        flex-direction: row !important;
+    }
 }
 
 
@@ -270,7 +274,7 @@ body {
 .c-content p {
     font-size: 16px;
     font-weight: 500;
-    color: var(--bg-color-nav);
+    color: var(--pri-color);
     text-align: center;
 }
 
@@ -284,6 +288,14 @@ body {
 }
 
 /* latest updates end */
+/* partners */
+.cc-sm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row !important;
+}
+/* partners */
 /* floating widget */
 .float {
     position: fixed;
